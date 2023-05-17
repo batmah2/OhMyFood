@@ -1,20 +1,20 @@
 .fonctionnement {
-    margin: 10px;
+    margin: 35px 0px 45px 30px;
     &-menu {
         margin: 10px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        gap: 15px;
     }
     &-menu-button {
-        width: 80%;
+        position: relative;
+        width: 95%;
         display: flex;
         flex-direction: row;
         align-items: center;
         background-color: #f6f6f6;
         border-radius: 20px;
         box-shadow:2px 7px 14px -8px rgba(0,0,0,0.75);
-        margin: 15px;
         padding: 15px;
         i {
             margin: 15px;
@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    left: 20px;
+    left: -15px;
     background-color: #9356DC;
     border-radius: 50%;
     color: white;
@@ -35,6 +35,5 @@
     width: 15px;
     p {
         position: absolute;
-        left: 24px;
     }
 }
