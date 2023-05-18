@@ -5,12 +5,15 @@
     padding: 20px;
     background-color: #353535;
     &-logo {
+        display: flex;
+        flex-direction: column;
         margin-bottom: 10px;
         width: 137px;
         color: white;        
     }
     a {
         color: white;
+        padding: 5px;
         img {
             filter: invert(100%);
         }
@@ -23,22 +26,18 @@
     }
     
 }
-.footer-flex-header {
+
+.footer-flex-desktop {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
-
 @media (min-width: 768px) {
     .footer-flex {
-        display: flex;
         flex-direction: row-reverse;
         justify-content: flex-start;
         gap: 15px;
     }
-    .footer-flex-header {
-        display: flex;
+    .footer-flex-desktop {
         flex-direction: row;
-        gap: 15px ;
     }
-}
+} 

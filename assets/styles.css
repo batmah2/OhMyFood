@@ -2,7 +2,6 @@
 .header-flex {
   display: flex;
   justify-content: center;
-  padding: 15px;
 }
 .header-flex a {
   padding: 10px;
@@ -69,13 +68,13 @@
 @media (min-width: 768px) {
   .fonctionnement {
     padding: 2% 10% 3%;
-    width: 75%;
+  }
+  .fonctionnement-menu-button {
+    width: 100%;
   }
   .fonctionnement-menu {
     flex-direction: row;
-    gap: 35px;
-    justify-content: center;
-    width: 100%;
+    gap: 65px;
   }
 }
 .restaurant {
@@ -177,12 +176,15 @@
   background-color: #353535;
 }
 .footer-flex-logo {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 10px;
   width: 137px;
   color: white;
 }
 .footer-flex a {
   color: white;
+  padding: 5px;
 }
 .footer-flex a img {
   filter: invert(100%);
@@ -194,23 +196,19 @@
   margin-right: 9px;
 }
 
-.footer-flex-header {
+.footer-flex-desktop {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
 @media (min-width: 768px) {
   .footer-flex {
-    display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
     gap: 15px;
   }
-  .footer-flex-header {
-    display: flex;
+  .footer-flex-desktop {
     flex-direction: row;
-    gap: 15px;
   }
 }
 .reservation {
@@ -397,7 +395,7 @@ main {
 a {
   color: black;
   text-decoration: none;
-  display: contents;
+  /*display: contents;*/
 }
 
 .cards img {

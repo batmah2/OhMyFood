@@ -46,12 +46,12 @@
 @media (min-width: 768px) {
     .fonctionnement {
         padding: 2% 10% 3%;
-        width: 75%;
+    }
+    .fonctionnement-menu-button {
+        width: 100%;
     }
     .fonctionnement-menu {
         flex-direction: row;
-        gap: 35px;
-        justify-content: center;
-        width: 100%;
+        gap: 65px;
     }
 }
