@@ -21,6 +21,11 @@
             color: #7e7e7e;
         }
     }
+    &-menu-bouton:hover {
+        i:hover {
+            color: #9356DC;
+        }
+    }
 }
 
 .position {
@@ -35,5 +40,18 @@
     width: 15px;
     p {
         position: absolute;
+    }
+}
+
+@media (min-width: 768px) {
+    .fonctionnement {
+        padding: 2% 10% 3%;
+        width: 75%;
+    }
+    .fonctionnement-menu {
+        flex-direction: row;
+        gap: 35px;
+        justify-content: center;
+        width: 100%;
     }
 }
