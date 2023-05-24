@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles.css">
     <script src="https://kit.fontawesome.com/d680d1e3d5.js" crossorigin="anonymous"></script>  
     <title>Oh My Food - Menu de Menilmontant</title>
@@ -23,7 +24,10 @@
         <section class="menu">
             <div class="menu__title">
                 <h1>Le délice des sens</h1>
-                <i class="fa-regular fa-heart jauge"></i>
+                <div class="favorite__position position__index">
+                    <span class="material-icons favorite">favorite</span>
+                    <span class="material-icons add__favorite">favorite_border</span>
+                </div>
             </div>
             <form class="menu__form">
                 <div class="menu__space">
@@ -32,24 +36,39 @@
                         <hr class="underscore">
                     </div>
                     <div class="menu__form--content">
-                        <h3>Tartare de thon</h3>
-                        <div class="content_flex">
-                            <p>Assaisonné au yuzu</p>
+                        <div class="content__flex--icon">
+                            <div class="content_flex">
+                                <h3>Tartare de thon</h3>                        
+                                <p>Assaisonné au yuzu</p>
+                            </div>
                             <h4>25€</h4>
                         </div>
-                    </div>
-                    <div class="menu__form--content">
-                        <h3>Bouchée de homard croustillant</h3>
-                        <div class="content_flex">
-                            <p>Et sa farandole de petits légumes</p>
-                            <h4>35€</h4>
+                        <div class="check__icon--position">
+                            <span class="material-icons check-icon">check_circle</span>
                         </div>
                     </div>
                     <div class="menu__form--content">
-                        <h3>Velouté de cèpes</h3>
-                        <div class="content_flex">
-                            <p>Aux truffes</p>
+                        <div class="content__flex--icon">
+                            <div class="content_flex">
+                                <h3>Bouchée de homard croustillant</h3>                        
+                                <p>Et sa farandole de petits légumes</p>
+                            </div>
+                            <h4>35€</h4>
+                        </div>
+                        <div class="check__icon--position">
+                            <span class="material-icons check-icon">check_circle</span>
+                        </div>
+                    </div>
+                    <div class="menu__form--content">
+                        <div class="content__flex--icon">
+                            <div class="content_flex">
+                                <h3>Velouté de cèpes</h3>                        
+                                <p>Aux truffes</p>
+                            </div>
                             <h4>20€</h4>
+                        </div>
+                        <div class="check__icon--position">
+                            <span class="material-icons check-icon">check_circle</span>
                         </div>
                     </div>
                 </div>
@@ -59,31 +78,39 @@
                         <hr class="underscore">
                     </div>
                     <div class="menu__form--content">
-                        <h3>Filet de bœuf aux herbes</h3>
-                        <div class="content_flex">
-                            <p>Accompagné de sa ribambelle de légumes</p>
+                        <div class="content__flex--icon">
+                            <div class="content_flex">
+                                <h3>Poulet rôti aux herbes de Provences</h3>                        
+                                <p>Et sa crème de truffe</p>
+                            </div>
                             <h4>40€</h4>
+                        </div>
+                        <div class="check__icon--position">
+                            <span class="material-icons check-icon">check_circle</span>
                         </div>
                     </div>
                     <div class="menu__form--content">
-                        <h3>Poulet rôti aux herbes de Provence </h3>
-                        <div class="content_flex">
-                            <p>Et sa crème de truffe</p>
-                            <h4>40€</h4>
-                        </div>
-                    </div>
-                    <div class="menu__form--content">
-                        <h3>Langouste rôtie</h3>
-                        <div class="content_flex">
-                            <p>Et ses légumes de saison</p>
+                        <div class="content__flex--icon">
+                            <div class="content_flex">
+                                <h3>Langouste rôtie</h3>                        
+                                <p>Et ses légumes de saison</p>
+                            </div>
                             <h4>35€</h4>
                         </div>
+                        <div class="check__icon--position">
+                            <span class="material-icons check-icon">check_circle</span>
+                        </div>
                     </div>
                     <div class="menu__form--content">
-                        <h3>Côte de bœuf Angus</h3>
-                        <div class="content_flex">
-                            <p>Et sa purée de panais</p>
+                        <div class="content__flex--icon">
+                            <div class="content_flex">
+                                <h3>Côte de bœuf Angus </h3>                        
+                                <p>Et sa purée de panais</p>
+                            </div>
                             <h4>44€</h4>
+                        </div>
+                        <div class="check__icon--position">
+                            <span class="material-icons check-icon">check_circle</span>
                         </div>
                     </div>
                 </div>
@@ -93,29 +120,44 @@
                         <hr class="underscore">
                     </div>
                     <div class="menu__form--content">
-                        <h3>Farandole de desserts</h3>
-                        <div class="content_flex">
-                            <p>Du chef</p>
+                        <div class="content__flex--icon">
+                            <div class="content_flex">
+                                <h3>Farandole de desserts</h3>                        
+                                <p>Du chef</p>
+                            </div>
                             <h4>18€</h4>
                         </div>
-                    </div>
-                    <div class="menu__form--content">
-                        <h3>Crème brulée</h3>
-                        <div class="content_flex">
-                            <p>Revisitée</p>
-                            <h4>22€</h4>
+                        <div class="check__icon--position">
+                            <span class="material-icons check-icon">check_circle</span>
                         </div>
                     </div>
                     <div class="menu__form--content">
-                        <h3>Tiramisu</h3>
-                        <div class="content_flex">
-                            <p>À la noisette</p>
+                        <div class="content__flex--icon">
+                            <div class="content_flex">
+                                <h3>Crème brulée </h3>                        
+                                <p>Revisitée</p>
+                            </div>
+                            <h4>22€</h4>
+                        </div>
+                        <div class="check__icon--position">
+                            <span class="material-icons check-icon">check_circle</span>
+                        </div>
+                    </div>
+                    <div class="menu__form--content">
+                        <div class="content__flex--icon">
+                            <div class="content_flex">
+                                <h3>Tiramisu</h3>                        
+                                <p>À la noisett</p>
+                            </div>
                             <h4>23€</h4>
+                        </div>
+                        <div class="check__icon--position">
+                            <span class="material-icons check-icon">check_circle</span>
                         </div>
                     </div>
                 </div>
                 <div class="btn-center">
-                    <button class="command-button">commander</button>
+                    <button class="command-button">Commander</button>
                 </div>
 
             </form>
