@@ -37,7 +37,16 @@
         justify-content: flex-start;
         gap: 15px;
     }
+    .footer-flex a {      
+        .margin-icone-1 {
+            margin-right: 9px;
+            }
+        .margin-icone-2 {
+            margin-right: 9px;
+            }  
+    }
     .footer-flex-desktop {
         flex-direction: row;
+        margin-right: 20px;
     }
 } 

@@ -18,7 +18,11 @@
         padding: 10px;
         i {
             margin: 15px;
+            font-size: 20px;
             color: #7e7e7e;
+        }
+        p {
+            font-weight: bold;
         }
     }
     &-menu-bouton:hover {
@@ -26,6 +30,14 @@
         
     }
 }
+
+.fonctionnement-menu-button:hover {
+    box-shadow:2px 7px 14px -8px rgba(0,0,0,95.75);
+
+    i {
+        color: #9356DC;
+    }
+} 
 
 .position {
     display: flex;
@@ -57,12 +69,12 @@
     .fonctionnement-menu-button {
         width: auto;
         margin-right: 2%;
+        height: 72px;
     }
 
     .fonctionnement-menu {
         flex-direction: row;
-        justify-content: center;
-        gap: 95px;
+        gap: 53px;
         width: 100%;
     }
 }

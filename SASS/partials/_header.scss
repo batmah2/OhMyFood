@@ -1,6 +1,8 @@
 .header-flex {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
     height: 69px;
     a {
         padding: 10px;
