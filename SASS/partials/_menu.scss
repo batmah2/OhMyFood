@@ -18,12 +18,12 @@
         position: relative;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
+        white-space: nowrap;
         h1{
             font-family: 'Shrikhand';
-            font-size: 28px;
-        }
-        i{
-            font-size: 22px;
+            font-size: 28px;            
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
     &__space {
@@ -60,6 +60,7 @@
         }
         p {
             margin: 10px 0px 0px;
+            font-size: 15px;
             overflow: hidden;
             text-overflow: ellipsis
         }
