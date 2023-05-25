@@ -97,6 +97,12 @@
     font-weight: 500;
     padding: 13px 30px;
     margin: 0px 0px 20px 0px;
+    cursor: pointer;
+}
+
+.command-button:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 95, 0.75);
+    filter: brightness(1.1);
 }
 
 @media (min-width: 1024px) {

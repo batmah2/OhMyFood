@@ -18,10 +18,10 @@
 
 body {
     margin: 0;
-    width: auto;
 }
 
-main {
+.main-container {
+    box-sizing: border-box;
     width: 100%;
 }
 

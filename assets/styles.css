@@ -2,6 +2,7 @@
 .header-flex {
   display: flex;
   justify-content: center;
+  height: 69px;
 }
 .header-flex a {
   padding: 10px;
@@ -62,7 +63,7 @@
   margin: 15px;
   color: #7e7e7e;
 }
-.fonctionnement-menu-bouton:hover i:hover {
+.fonctionnement-menu-bouton:hover {
   color: #9356DC;
 }
 
@@ -90,13 +91,13 @@
     align-items: flex-start;
   }
   .fonctionnement-menu-button {
-    width: 80%;
+    width: 100%;
     padding: 10px 38px 10px 20px;
   }
   .fonctionnement-menu {
     flex-direction: row;
     justify-content: center;
-    gap: 65px;
+    gap: 95px;
   }
 }
 .restaurant {
@@ -172,6 +173,10 @@
 .cards-description h2 {
   margin: 10px 0px 5px 10px;
   font-size: 18px;
+}
+.cards:hover {
+  filter: brightness(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 @media (min-width: 1024px) {
@@ -268,10 +273,18 @@
   cursor: pointer;
 }
 .reservation-button:hover {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75);
-  opacity: 0.5;
+  box-shadow: 0px 4px 10px rgba(0, 0, 95, 0.75);
+  filter: brightness(1.1);
 }
 
+@media (min-width: 1024px) {
+  .reservation h1 {
+    font-size: 40px;
+  }
+  .reservation p {
+    font-size: 18px;
+  }
+}
 .menu {
   background-color: #f7f7f7;
 }
@@ -369,6 +382,12 @@
   font-weight: 500;
   padding: 13px 30px;
   margin: 0px 0px 20px 0px;
+  cursor: pointer;
+}
+
+.command-button:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 95, 0.75);
+  filter: brightness(1.1);
 }
 
 @media (min-width: 1024px) {
@@ -427,7 +446,6 @@
   -webkit-text-fill-color: transparent;
 }
 .favorite:hover {
-  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
   opacity: 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -436,17 +454,16 @@
 .add__favorite {
   cursor: pointer;
   position: relative;
-  transition: opacity 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-background-clip: text;
 }
 .add__favorite:hover {
-  opacity: 0%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  opacity: 0;
 }
 
 .menu__form--content {
   cursor: pointer;
-  animation: checkbox 1s forwards;
+  animation: slide 1s forwards;
   opacity: 0;
 }
 
@@ -466,7 +483,7 @@
   animation-delay: 800ms;
 }
 
-@keyframes checkbox {
+@keyframes slide {
   0% {
     transform: translatey(20px);
     opacity: 0%;
@@ -488,7 +505,8 @@
   border-bottom-right-radius: 10px;
   transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
-.check__icon--position:hover {
+
+.menu__form--content:hover .check__icon--position {
   opacity: 100%;
   width: 60px;
 }
@@ -501,26 +519,11 @@
   transition: 0.4s ease-in-out;
 }
 
-.check-icon:hover {
+.menu__form--content:hover .check-icon {
   color: white;
   transform: rotate(-360deg);
 }
 
-@media (min-width: 1024px) {
-  .favorite:active {
-    background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
-    opacity: 100%;
-    transition: all 0.5s ease-in-out;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .add__favorite:active {
-    opacity: 0%;
-    transition: opacity;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
 /** Général **/
 * {
   font-family: "Roboto", sans-serif;
@@ -528,10 +531,10 @@
 
 body {
   margin: 0;
-  width: auto;
 }
 
-main {
+.main-container {
+  box-sizing: border-box;
   width: 100%;
 }
 

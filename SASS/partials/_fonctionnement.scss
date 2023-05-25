@@ -22,9 +22,8 @@
         }
     }
     &-menu-bouton:hover {
-        i:hover {
-            color: #9356DC;
-        }
+        color: #9356DC;
+        
     }
 }
 
@@ -52,12 +51,12 @@
         align-items: flex-start;
     }
     .fonctionnement-menu-button {
-        width: 80%;
+        width: 100%;
         padding: 10px 38px 10px 20px;
     }
     .fonctionnement-menu {
         flex-direction: row;
         justify-content: center;
-        gap: 65px;
+        gap: 95px;
     }
 }
