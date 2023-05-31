@@ -59,9 +59,18 @@
   
 }
 
-.slider-0::before {animation-delay: calc(-2.5s);}
-.slider-1::before {animation-delay: calc(-3.5s);}
-.slider-2::before {animation-delay: calc(-4.5s);}
+.slider-0::before {
+  animation-delay: calc(-2.5s);
+  overflow: hidden;
+}
+.slider-1::before {
+  animation-delay: calc(-3.5s);
+  overflow: hidden;
+}
+.slider-2::before {
+  animation-delay: calc(-4.5s);
+  overflow: hidden;
+}
 
 @keyframes animate_2 {
   0% {

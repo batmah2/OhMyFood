@@ -365,14 +365,17 @@
 
 .slider-0::before {
   animation-delay: -2.5s;
+  overflow: hidden;
 }
 
 .slider-1::before {
   animation-delay: -3.5s;
+  overflow: hidden;
 }
 
 .slider-2::before {
   animation-delay: -4.5s;
+  overflow: hidden;
 }
 
 @keyframes animate_2 {
