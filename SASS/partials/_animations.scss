@@ -7,7 +7,7 @@
 }
 
 .position__index {
-padding: 5px;
+padding: 15px 20px 0px;
 }
 
 .favorite__position {
@@ -42,6 +42,7 @@ padding: 5px;
 .favorite__position:hover .add__favorite {
     opacity: 0;
 }
+
 .menu__form--content {
     cursor: pointer;
     animation: slide 1s forwards;
@@ -92,8 +93,7 @@ padding: 5px;
 
 .menu__form--content:hover .check-icon {
     color: white;
-    transform: rotate(-360deg) 
-
+    transform: rotate(-360deg)
 }
 
 

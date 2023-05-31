@@ -60,6 +60,7 @@
   border-radius: 20px;
   box-shadow: 2px 7px 14px -8px rgba(0, 0, 0, 0.75);
   padding: 10px;
+  transition: all 0.4s;
 }
 .fonctionnement-menu-button i {
   margin: 15px;
@@ -191,9 +192,6 @@
   margin: 10px 0px 5px 10px;
   font-size: 18px;
 }
-.cards:hover {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-}
 
 @media (min-width: 1024px) {
   .restaurant {
@@ -294,6 +292,7 @@
   font-weight: 500;
   padding: 13px 18.75px;
   cursor: pointer;
+  transition: all 0.4s;
 }
 .reservation-button:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 95, 0.75);
@@ -313,14 +312,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
 }
 
-.position {
+.loader-position {
   position: relative;
 }
 
@@ -331,7 +325,7 @@
   height: 60px;
   width: 45px;
   border-radius: 0px 0px 30px 30px;
-  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 30px #fff, inset -5px -5px 10px rgba(0, 0, 255, 0.1), inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1), -15px -15px 30px #fff, inset -5px -5px 10px rgba(0, 0, 255, 0.1), inset 5px 5px 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
@@ -363,8 +357,8 @@
   width: 20px;
   border-radius: 100%;
   box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.3), 0px 420px 0 400px #2697f3, inset 0px 0px 0px rgba(0, 0, 0, 0.1);
-  animation: animate_2 2.5s ease-in-out infinite;
-  animation-delay: calc(-0.5s * var(--i));
+  animation: animate_2 3.5s ease-in-out infinite;
+  animation-delay: calc(-2.5s * var(--i));
 }
 
 @keyframes animate_2 {
@@ -380,6 +374,37 @@
     filter: hue-rotate(180deg);
   }
 }
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff; /* Couleur de fond du loader */
+  z-index: 9999;
+  opacity: 1;
+  animation: fade-out 0.2s 3s forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.main-container {
+  opacity: 1;
+  transition: opacity 3s ease-in;
+}
+
+.loader.fade-out .main-container {
+  opacity: 0;
+  transition: all 3s ease-out;
+}
+
 .menu {
   background-color: #f7f7f7;
 }
@@ -479,6 +504,7 @@
   padding: 13px 30px;
   margin: 0px 0px 20px 0px;
   cursor: pointer;
+  transition: all 0.4s;
 }
 
 .command-button:hover {
@@ -523,7 +549,7 @@
 }
 
 .position__index {
-  padding: 5px;
+  padding: 15px 20px 0px;
 }
 
 .favorite__position {
@@ -627,9 +653,14 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
 .main-container {
   box-sizing: border-box;
   width: 100%;
+  margin: 0;
 }
 
 a {

@@ -7,172 +7,198 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles.css">
     <script src="https://kit.fontawesome.com/d680d1e3d5.js" crossorigin="anonymous"></script>  
     <title>Oh My Food - Menu de Menilmontant</title>
 </head>
 <body>
-    <header class="header-flex header__menu">
-        <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
-        <a href="../index.html"><img src="../assets/logo/ohmyfood@2x.svg" alt="logo du site"></a>
-    </header>
-        <section class="menu__image">
-            <img src="../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'un plat">
-        </section>
-        <div class="menu-center-desktop"></div>
-        <section class="menu">
-            <div class="menu__title">
-                <h1>La Palette du goût</h1>
-                <div class="favorite__position">
-                    <span class="material-icons favorite">favorite</span>
-                    <span class="material-icons add__favorite">favorite_border</span>
-                </div>                
+    <section class="loader">
+        <div class="loader-position">
+            <div class="slider" style="--i:0">
             </div>
-            <form class="menu__form">
-                <div class="menu__space">
-                    <div class="menu__form--title">
-                        <p class="">ENTRÉES</p>
-                        <hr class="underscore">
-                    </div>
-                    <div class="menu__form--content">
-                        <div class="content__flex--icon">
-                            <div class="content_flex">
-                                <h3>Fricassée d'escargots</h3>                                                        
-                                <p>Au piment d'Espelette</p>
-                            </div>
-                            <h4>24€</h4>
-                        </div>
-                        <div class="check__icon--position">
-                            <span class="material-icons check-icon">check_circle</span>
-                        </div>  
-                    </div>
-                    <div class="menu__form--content">
-                        <div class="content__flex--icon">
-                            <div class="content_flex">
-                                <h3>Foie gras de canard mi-cuit</h3>                        
-                                <p>Et ses copeaux de truffe noire</p>                            
-                            </div>
-                            <h4>35€</h4>
-                        </div>
-                        <div class="check__icon--position">
-                            <span class="material-icons check-icon">check_circle</span>
-                        </div>
-                    </div>
-                    <div class="menu__form--content">
-                        <div class="content__flex--icon">
-                            <div class="content_flex">
-                                <h3>Œuf au plat</h3>                        
-                                <p>Assaisonné à la truffe sur lit de caviar</p>
-                            </div>
-                            <h4>20€</h4>
-                        </div>
-                        <div class="check__icon--position">
-                            <span class="material-icons check-icon">check_circle</span>
-                        </div>
-                    </div>
+            <span>
+                <div class="wineglass"></div>
+                <div class="winefoot"></div>
+            </span>
+        </div>
+        <div class="loader-position">
+            <div class="slider" style="--i:1">
+            </div>
+            <span>
+                <div class="wineglass"></div>
+                <div class="winefoot"></div>
+            </span>
+        </div>
+        <div class="loader-position">
+            <div class="slider" style="--i:2">
+            </div>
+            <span>
+                <div class="wineglass"></div>
+                <div class="winefoot"></div>
+            </span> 
+        </div>           
+    </section>
+    <div class="main-container">
+        <header class="header-flex header__menu">
+            <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="../index.html"><img src="../assets/logo/ohmyfood@2x.svg" alt="logo du site"></a>
+        </header>
+            <section class="menu__image">
+                <img src="../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'un plat">
+            </section>
+            <div class="menu-center-desktop">
+            <section class="menu">
+                <div class="menu__title">
+                    <h1>La Palette du goût</h1>
+                    <div class="favorite__position">
+                        <span class="material-icons favorite">favorite</span>
+                        <span class="material-icons add__favorite">favorite_border</span>
+                    </div>                
                 </div>
-                <div class="menu__space">
-                    <div class="menu__form--title">
-                        <p class="">PLATS</p>
-                        <hr class="underscore">
-                    </div>
-                    <div class="menu__form--content">
-                        <div class="content__flex--icon">
-                            <div class="content_flex">
-                                <h3>Filet de bœuf aux herbes</h3>
-                                <p>Accompagné de sa ribambelle de légumes</p>
-                            </div>
-                                <h4>40€</h4>
+                <form class="menu__form">
+                    <div class="menu__space">
+                        <div class="menu__form--title">
+                            <p class="">ENTRÉES</p>
+                            <hr class="underscore">
+                        </div>
+                        <div class="menu__form--content">
+                            <div class="content__flex--icon">
+                                <div class="content_flex">
+                                    <h3>Fricassée d'escargots</h3>                                                        
+                                    <p>Au piment d'Espelette</p>
+                                </div>
+                                <h4>24€</h4>
                             </div>
                             <div class="check__icon--position">
                                 <span class="material-icons check-icon">check_circle</span>
+                            </div>  
+                        </div>
+                        <div class="menu__form--content">
+                            <div class="content__flex--icon">
+                                <div class="content_flex">
+                                    <h3>Foie gras de canard mi-cuit</h3>                        
+                                    <p>Et ses copeaux de truffe noire</p>                            
+                                </div>
+                                <h4>35€</h4>
+                            </div>
+                            <div class="check__icon--position">
+                                <span class="material-icons check-icon">check_circle</span>
+                            </div>
+                        </div>
+                        <div class="menu__form--content">
+                            <div class="content__flex--icon">
+                                <div class="content_flex">
+                                    <h3>Œuf au plat</h3>                        
+                                    <p>Assaisonné à la truffe sur lit de caviar</p>
+                                </div>
+                                <h4>20€</h4>
+                            </div>
+                            <div class="check__icon--position">
+                                <span class="material-icons check-icon">check_circle</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__space">
+                        <div class="menu__form--title">
+                            <p class="">PLATS</p>
+                            <hr class="underscore">
+                        </div>
+                        <div class="menu__form--content">
+                            <div class="content__flex--icon">
+                                <div class="content_flex">
+                                    <h3>Filet de bœuf aux herbes</h3>
+                                    <p>Accompagné de sa ribambelle de légumes</p>
+                                </div>
+                                    <h4>40€</h4>
+                                </div>
+                                <div class="check__icon--position">
+                                    <span class="material-icons check-icon">check_circle</span>
+                                </div>                        
+                        </div>
+                        <div class="menu__form--content">
+                            <div class="content__flex--icon">
+                                <div class="content_flex">
+                                    <h3>Parmentier de queue de bœuf</h3>                        
+                                    <p>À la truffe noire sur sa purée de panais</p>
+                                </div>
+                                <h4>35€</h4>
+                            </div>
+                            <div class="check__icon--position">
+                                <span class="material-icons check-icon">check_circle</span>
+                            </div>
+                        </div>
+                        <div class="menu__form--content">
+                            <div class="content__flex--icon">
+                                <div class="content_flex">
+                                    <h3>Filet de turbot</h3>                        
+                                    <p>Aux agrumes</p>
+                                </div>
+                                <h4>44€</h4>
+                            </div>
+                            <div class="check__icon--position">
+                                <span class="material-icons check-icon">check_circle</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__space">
+                        <div class="menu__form--title">
+                            <p class="">DESSERTS</p>
+                            <hr class="underscore">
+                        </div>
+                        <div class="menu__form--content">
+                            <div class="content__flex--icon">
+                                <div class="content_flex">
+                                    <h3>Paris-Brest</h3>                        
+                                    <p>Revisité</p>
+                                </div>
+                                <h4>18€</h4>
                             </div>                        
-                    </div>
-                    <div class="menu__form--content">
-                        <div class="content__flex--icon">
-                            <div class="content_flex">
-                                <h3>Parmentier de queue de bœuf</h3>                        
-                                <p>À la truffe noire sur sa purée de panais</p>
+                            <div class="check__icon--position">
+                                <span class="material-icons check-icon">check_circle</span>
                             </div>
-                            <h4>35€</h4>
                         </div>
-                        <div class="check__icon--position">
-                            <span class="material-icons check-icon">check_circle</span>
-                        </div>
-                    </div>
-                    <div class="menu__form--content">
-                        <div class="content__flex--icon">
-                            <div class="content_flex">
-                                <h3>Filet de turbot</h3>                        
-                                <p>Aux agrumes</p>
+                        <div class="menu__form--content">
+                            <div class="content__flex--icon">
+                                <div class="content_flex">
+                                    <h3>Macaron au chocolat d'exception </h3>                       
+                                    <p>Et glace à la vanille de Madagascar</p>
+                                </div>
+                                <h4>22€</h4>
                             </div>
-                            <h4>44€</h4>
-                        </div>
-                        <div class="check__icon--position">
-                            <span class="material-icons check-icon">check_circle</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu__space">
-                    <div class="menu__form--title">
-                        <p class="">DESSERTS</p>
-                        <hr class="underscore">
-                    </div>
-                    <div class="menu__form--content">
-                        <div class="content__flex--icon">
-                            <div class="content_flex">
-                                <h3>Paris-Brest</h3>                        
-                                <p>Revisité</p>
+                            <div class="check__icon--position">
+                                <span class="material-icons check-icon">check_circle</span>
                             </div>
-                            <h4>18€</h4>
-                        </div>                        
-                        <div class="check__icon--position">
-                            <span class="material-icons check-icon">check_circle</span>
                         </div>
-                    </div>
-                    <div class="menu__form--content">
-                        <div class="content__flex--icon">
-                            <div class="content_flex">
-                                <h3>Macaron au chocolat d'exception </h3>                       
-                                <p>Et glace à la vanille de Madagascar</p>
+                        <div class="menu__form--content">
+                            <div class="content__flex--icon">
+                                <div class="content_flex">
+                                    <h3>Mousse au chocolat </h3>                      
+                                    <p>Au piment d'Espelette et à la truffe noire</p>
+                                </div>
+                                <h4>23€</h4>
                             </div>
-                            <h4>22€</h4>
-                        </div>
-                        <div class="check__icon--position">
-                            <span class="material-icons check-icon">check_circle</span>
-                        </div>
-                    </div>
-                    <div class="menu__form--content">
-                        <div class="content__flex--icon">
-                            <div class="content_flex">
-                                <h3>Mousse au chocolat </h3>                      
-                                <p>Au piment d'Espelette et à la truffe noire</p>
+                            <div class="check__icon--position">
+                                <span class="material-icons check-icon">check_circle</span>
                             </div>
-                            <h4>23€</h4>
-                        </div>
-                        <div class="check__icon--position">
-                            <span class="material-icons check-icon">check_circle</span>
                         </div>
                     </div>
-                </div>
-                <div class="btn-center">
-                    <button class="command-button">Commander</button>
-                </div>
+                    <div class="btn-center">
+                        <button class="command-button">Commander</button>
+                    </div>
 
-            </form>
-        </section>
-    </div>
-               
-    </main>
-    <footer class="footer-flex">
-        <a href="../index.html"><img src="../assets/logo/ohmyfood.png" class="footer-flex-logo" alt="logo du site"></a>
-        <div class="footer-flex-desktop">
-            <a href="#"><i class="fa-solid fa-utensils margin-icone-1"></i>Proposer un restaurant</a>
-            <a href="#"><i class="fa-solid fa-handshake-angle margin-icone-2"></i>Devenir Partenaire</a>
-            <a href="#">Mentions légales</a>
-            <a href="#">Contact</a>
-        </div>
-    </footer>
+                </form>
+            </section>
+        </div>    
+        <footer class="footer-flex">
+            <a href="../index.html"><img src="../assets/logo/ohmyfood.png" class="footer-flex-logo" alt="logo du site"></a>
+            <div class="footer-flex-desktop">
+                <a href="#"><i class="fa-solid fa-utensils margin-icone-1"></i>Proposer un restaurant</a>
+                <a href="#"><i class="fa-solid fa-handshake-angle margin-icone-2"></i>Devenir Partenaire</a>
+                <a href="#">Mentions légales</a>
+                <a href="#">Contact</a>
+            </div>
+        </footer>
+    </div> 
 </body>
 </html>
