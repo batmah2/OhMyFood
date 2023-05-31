@@ -32,7 +32,7 @@ padding: 15px 20px 0px;
 
 }
 
-.favorite__position:active .favorite {    
+.favorite__position:focus .favorite {    
     opacity: 100%;               
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -50,7 +50,7 @@ padding: 15px 20px 0px;
     opacity: 0;
 }
 
-.favorite__position:active .add__favorite {
+.favorite__position:focus .add__favorite {
     opacity: 0;
 }
 
@@ -94,7 +94,7 @@ padding: 15px 20px 0px;
     width: 60px;    
 }
 
-.menu__form--content:active .check__icon--position {
+.menu__form--content:focus .check__icon--position {
     opacity: 100%;
     width: 60px;    
 }
@@ -112,7 +112,7 @@ padding: 15px 20px 0px;
     transform: rotate(-360deg)
 }
 
-.menu__form--content:active .check-icon {
+.menu__form--content:focus .check-icon {
     color: white;
     transform: rotate(-360deg)
 }
