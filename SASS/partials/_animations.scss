@@ -32,6 +32,13 @@ padding: 15px 20px 0px;
 
 }
 
+.favorite__position:active .favorite {    
+    opacity: 100%;               
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
 .add__favorite {    
     cursor: pointer;
     position: relative;    
@@ -40,6 +47,10 @@ padding: 15px 20px 0px;
 }
 
 .favorite__position:hover .add__favorite {
+    opacity: 0;
+}
+
+.favorite__position:active .add__favorite {
     opacity: 0;
 }
 
@@ -83,6 +94,11 @@ padding: 15px 20px 0px;
     width: 60px;    
 }
 
+.menu__form--content:active .check__icon--position {
+    opacity: 100%;
+    width: 60px;    
+}
+
 .check-icon {
     cursor: pointer;
     display: inline-block;
@@ -96,6 +112,10 @@ padding: 15px 20px 0px;
     transform: rotate(-360deg)
 }
 
+.menu__form--content:active .check-icon {
+    color: white;
+    transform: rotate(-360deg)
+}
 
 
 

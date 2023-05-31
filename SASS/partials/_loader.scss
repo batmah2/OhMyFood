@@ -46,6 +46,7 @@
 
 .slider::before {
   content: "";
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;

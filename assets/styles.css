@@ -352,6 +352,7 @@
 
 .slider::before {
   content: "";
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -587,6 +588,12 @@
   -webkit-text-fill-color: transparent;
 }
 
+.favorite__position:active .favorite {
+  opacity: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .add__favorite {
   cursor: pointer;
   position: relative;
@@ -595,6 +602,10 @@
 }
 
 .favorite__position:hover .add__favorite {
+  opacity: 0;
+}
+
+.favorite__position:active .add__favorite {
   opacity: 0;
 }
 
@@ -648,6 +659,11 @@
   width: 60px;
 }
 
+.menu__form--content:active .check__icon--position {
+  opacity: 100%;
+  width: 60px;
+}
+
 .check-icon {
   cursor: pointer;
   display: inline-block;
@@ -657,6 +673,11 @@
 }
 
 .menu__form--content:hover .check-icon {
+  color: white;
+  transform: rotate(-360deg);
+}
+
+.menu__form--content:active .check-icon {
   color: white;
   transform: rotate(-360deg);
 }
