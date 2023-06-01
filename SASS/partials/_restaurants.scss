@@ -31,6 +31,7 @@
     border-radius: 20px;
     position: relative;
     margin-bottom: 20px;
+    height: max-content;
     &-nouveau {
         width: 60px;
         font-size: 14px;
@@ -47,6 +48,11 @@
             margin: 0;
             font-weight: bold;
         }
+    }
+    &__flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     img {
         width: 100%;
@@ -65,9 +71,9 @@
     }
     &-description {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0px 0px 10px 10px;
         h2 {
             margin: 10px 0px 5px 10px;
             font-size: 18px;
