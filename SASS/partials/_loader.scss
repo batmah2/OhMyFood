@@ -64,12 +64,13 @@
   border-radius: 100%;
   box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.3), 0px 420px 0 400px #2697f3,
               inset 0px 0px 0px rgba(0, 0, 0, 0.1);
-  animation: animate_2 3.5s ease-in-out infinite;
+  -webkit-animation: fill-in-out 3.5s ease-in-out infinite;;
+  animation: fill-in-out 3.5s ease-in-out infinite;
   
 }
 
 .slider-0::before {
-  animation-delay: calc(-4.5s);
+  animation-delay: calc(-4.5s);  
   overflow: hidden;
 }
 .slider-1::before {
@@ -81,7 +82,23 @@
   overflow: hidden;
 }
 
-@keyframes animate_2 {
+@-webkit-keyframes fill-in-out {
+  0% {
+    -webkit-transform: translateY(250px);
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(250px);
+    -webkit-filter: hue-rotate(180deg);
+  }
+}
+
+@keyframes fill-in-out {
   0% {
     transform: translateY(250px);
     filter: hue-rotate(0deg);

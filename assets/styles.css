@@ -382,7 +382,8 @@
   width: 20px;
   border-radius: 100%;
   box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.3), 0px 420px 0 400px #2697f3, inset 0px 0px 0px rgba(0, 0, 0, 0.1);
-  animation: animate_2 3.5s ease-in-out infinite;
+  -webkit-animation: fill-in-out 3.5s ease-in-out infinite;
+  animation: fill-in-out 3.5s ease-in-out infinite;
 }
 
 .slider-0::before {
@@ -400,7 +401,20 @@
   overflow: hidden;
 }
 
-@keyframes animate_2 {
+@-webkit-keyframes fill-in-out {
+  0% {
+    -webkit-transform: translateY(250px);
+    -webkit-filter: hue-rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(250px);
+    -webkit-filter: hue-rotate(180deg);
+  }
+}
+@keyframes fill-in-out {
   0% {
     transform: translateY(250px);
     filter: hue-rotate(0deg);
@@ -616,7 +630,7 @@
 
 .menu__form--content {
   cursor: pointer;
-  animation: slide 1s forwards;
+  animation: slide-in-right 1.5s forwards;
   opacity: 0;
 }
 
@@ -625,25 +639,25 @@
 }
 
 .menu__form--content:nth-child(3) {
-  animation-delay: 400ms;
-}
-
-.menu__form--content:nth-child(4) {
   animation-delay: 600ms;
 }
 
-.menu__form--content:nth-child(5) {
-  animation-delay: 800ms;
+.menu__form--content:nth-child(4) {
+  animation-delay: 1000ms;
 }
 
-@keyframes slide {
+.menu__form--content:nth-child(5) {
+  animation-delay: 1400ms;
+}
+
+@keyframes slide-in-right {
   0% {
-    transform: translatey(20px);
-    opacity: 0%;
+    transform: translateX(1000px);
+    opacity: 0;
   }
   100% {
-    transform: translatey(0px);
-    opacity: 100%;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 .check__icon--position {
