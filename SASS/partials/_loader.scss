@@ -83,22 +83,6 @@
   overflow: hidden;
 }
 
-@-webkit-keyframes fill-in-out {
-  0% {
-    -webkit-transform: translateY(250px);
-    -webkit-filter: hue-rotate(0deg);
-  }
-
-  50% {
-    -webkit-transform: translateY(0);
-  }
-
-  100% {
-    -webkit-transform: translateY(250px);
-    -webkit-filter: hue-rotate(180deg);
-  }
-}
-
 @keyframes fill-in-out {
   0% {
     transform: translateY(250px);

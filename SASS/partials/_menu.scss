@@ -34,6 +34,10 @@
     }
     &__form--title {
         position: relative;
+        h2 {
+            font-size: 16px;
+            font-weight: 500;
+        }
         .underscore {
             background-color: #99E2D0;
             height: 3px;
@@ -55,8 +59,9 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        h4 {
-            margin: 43px 10px 0px;            
+        .price {
+            margin: 43px 10px 0px;
+            font-weight: 700;          
         }
         p {
             margin: 10px 0px 0px;
@@ -107,7 +112,7 @@
     filter: brightness(1.1);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px){
     .menu-center-desktop {
         display: flex;
         flex-direction: column;

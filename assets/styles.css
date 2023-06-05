@@ -96,7 +96,7 @@
   position: absolute;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .fonctionnement {
     padding: 2% 13% 3%;
     display: flex;
@@ -199,7 +199,7 @@
   font-size: 18px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .restaurant {
     padding: 2% 13%;
     display: flex;
@@ -252,7 +252,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .footer-flex {
     flex-direction: row-reverse;
     justify-content: flex-start;
@@ -312,7 +312,7 @@
   filter: brightness(1.1);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .reservation h1 {
     font-size: 40px;
   }
@@ -402,19 +402,6 @@
   overflow: hidden;
 }
 
-@-webkit-keyframes fill-in-out {
-  0% {
-    -webkit-transform: translateY(250px);
-    -webkit-filter: hue-rotate(0deg);
-  }
-  50% {
-    -webkit-transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(250px);
-    -webkit-filter: hue-rotate(180deg);
-  }
-}
 @keyframes fill-in-out {
   0% {
     transform: translateY(250px);
@@ -483,6 +470,10 @@
 .menu__form--title {
   position: relative;
 }
+.menu__form--title h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
 .menu__form--title .underscore {
   background-color: #99E2D0;
   height: 3px;
@@ -504,8 +495,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu__form--content h4 {
+.menu__form--content .price {
   margin: 43px 10px 0px;
+  font-weight: 700;
 }
 .menu__form--content p {
   margin: 10px 0px 0px;
@@ -554,7 +546,7 @@
   filter: brightness(1.1);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .menu-center-desktop {
     display: flex;
     flex-direction: column;
@@ -604,7 +596,6 @@
   display: inline-block;
   cursor: pointer;
   position: absolute;
-  z-index: 1;
   opacity: 0%;
   transition: 0.4s ease-in-out;
   background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
@@ -690,7 +681,8 @@
   display: inline-block;
   color: white;
   font-size: 2rem;
-  transition: 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  margin-right: 2px;
 }
 
 .menu__form--content:hover .check-icon {
@@ -704,7 +696,7 @@
 }
 
 body {
-  margin: 0;
+  margin: auto;
 }
 
 .main-container {
